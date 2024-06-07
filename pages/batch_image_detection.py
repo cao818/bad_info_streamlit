@@ -1,10 +1,12 @@
 import logging
 import os
 import tempfile
+
 import streamlit as st
 from PIL import Image
+
 from functions.image_processing import image_processing
-from utils import visualize_detection_results
+
 
 def batch_image_detection_page(API_KEY, SECRET_KEY):
     # 初始化用户session状态
