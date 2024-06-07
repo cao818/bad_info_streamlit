@@ -1,0 +1,5 @@
+msgid "不良信息检测系统"
+msgstr "Bad Information Detection System"
+
+msgid "文本检测"
+msgstr "Text Detection"

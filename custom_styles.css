@@ -1,0 +1,64 @@
+.main {
+    background-color: #f0f2f6;
+    color: #333333;
+    font-family: 'Arial', sans-serif;
+}
+
+.sidebar .sidebar-content {
+    background-color: #f0f2f6;
+}
+
+.stButton>button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.stButton>button:hover {
+    background-color: #0056b3;
+}
+
+.stTextInput input {
+    font-size: 18px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.stTextArea textarea {
+    font-size: 16px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.stFileUploader>label {
+    font-size: 18px;
+    padding: 10px;
+    background-color: #f8f9fa;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.stFileUploader>label:hover {
+    background-color: #e2e6ea;
+}
+
+.stAlert {
+    margin-top: 20px;
+    border-radius: 4px;
+}
+
+.stAlert .markdown-text-container {
+    padding: 10px;
+}
