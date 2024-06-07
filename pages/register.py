@@ -1,5 +1,8 @@
 import streamlit as st
-from user_management import hash_password, validate_username, validate_password, save_user
+
+from data.database import save_user
+from user_management import hash_password, validate_username, validate_password
+
 
 def register_page(registered_users):
     # 初始化用户session状态

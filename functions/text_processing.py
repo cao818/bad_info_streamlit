@@ -1,7 +1,7 @@
 import logging
-import streamlit as st
+
 import requests
-import urllib.parse
+import streamlit as st
 
 
 def get_access_token(api_key, secret_key):

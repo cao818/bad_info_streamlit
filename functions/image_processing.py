@@ -1,6 +1,5 @@
 import base64
 import logging
-from functools import lru_cache
 import streamlit as st
 import requests
 import urllib
@@ -95,11 +94,6 @@ def image_processing(api_key, secret_key, image_path):
     except Exception as e:
         st.error(f"处理图像时出错: {e}")
         return None
-
-
-@lru_cache(maxsize=128)
-def cached_upload_image(api_key, secret_key, image_path):
-    return image_processing(api_key, secret_key, image_path)
 
 
 def main():
