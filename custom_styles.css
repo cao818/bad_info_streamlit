@@ -2,10 +2,12 @@
     background-color: #f0f2f6;
     color: #333333;
     font-family: 'Arial', sans-serif;
+    padding: 20px;
 }
 
 .sidebar .sidebar-content {
     background-color: #f0f2f6;
+    padding: 20px;
 }
 
 .stButton>button {
@@ -20,11 +22,13 @@
     margin: 4px 2px;
     cursor: pointer;
     border-radius: 4px;
-    transition: background-color 0.3s;
+    transition: background-color 0.3s, box-shadow 0.3s;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .stButton>button:hover {
     background-color: #0056b3;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .stTextInput input {
@@ -32,6 +36,15 @@
     padding: 10px;
     border: 1px solid #ddd;
     border-radius: 4px;
+    margin: 10px 0;
+    transition: border-color 0.3s;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.stTextInput input:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+    outline: none;
 }
 
 .stTextArea textarea {
@@ -39,6 +52,15 @@
     padding: 10px;
     border: 1px solid #ddd;
     border-radius: 4px;
+    margin: 10px 0;
+    transition: border-color 0.3s;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.stTextArea textarea:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+    outline: none;
 }
 
 .stFileUploader>label {
@@ -48,17 +70,45 @@
     border: 1px solid #ddd;
     border-radius: 4px;
     cursor: pointer;
+    transition: background-color 0.3s, box-shadow 0.3s;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    margin: 10px 0;
 }
 
 .stFileUploader>label:hover {
     background-color: #e2e6ea;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .stAlert {
     margin-top: 20px;
     border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .stAlert .markdown-text-container {
     padding: 10px;
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #333333;
+    font-family: 'Arial', sans-serif;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+
+code {
+    font-size: 14px;
+    background-color: #f8f9fa;
+    padding: 2px 4px;
+    border-radius: 4px;
 }
