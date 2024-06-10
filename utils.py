@@ -66,7 +66,7 @@ def visualize_detection_results(results):
 
     :param results: 检测结果列表
     """
-    labels = ['合规', '不合规']
+    labels = ['league', 'illeague']
     sizes = [results.count('合规'), results.count('不合规')]
     colors = ['#4CAF50', '#FF5252']
     explode = (0, 0.1)
